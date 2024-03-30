@@ -1,0 +1,12 @@
+ <div class="container">
+    <!-- <h3>Parent comp</h3> -->
+     <div class="container">
+      <h4>parent comp</h4>
+      <app-child [dataFromChild]="parentData" (dataEvent)="onFetchDataFromChild($event)"></app-child>
+      <p>This is the data from parent<b>{{chilData}}</b></p>
+      <app-outer [dataFromChild2]="parentData"></app-outer> 
+      <app-outer></app-outer>
+
+      <h4>End comp</h4>
+
+     </div>
